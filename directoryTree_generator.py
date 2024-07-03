@@ -64,7 +64,7 @@ class _TreeGenerator:
 
 
 # List of folder names to exclude dynamically
-exclude_folders = [".venv", "node_modules", ".git"]
+exclude_folders = [".venv", "node_modules", ".git", ".idea", ".pytest_cache", "__pycache__"]  # List of folder names to exclude dynamically
 
 tree = DirectoryTreeGenerator("./", exclude_folders=exclude_folders)
 tree.generate()
